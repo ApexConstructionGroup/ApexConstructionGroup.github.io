@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Ironclad Construction</title>
+<meta name="description" content="Selected commercial, residential and renovation projects completed by Ironclad Construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">Ironclad<span class="brand__dot">.</span></a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" data-nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--dark btn--sm" href="contact.html">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Our work</span>
+      <h1>Selected projects</h1>
+      <p>A sample of what we've built over the last thirty years — from medical facilities and retail parks to family homes and listed-building restorations.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filters reveal" role="group" aria-label="Filter projects by type">
+        <button class="filter is-active" data-filter="all" aria-pressed="true">All projects</button>
+        <button class="filter" data-filter="commercial" aria-pressed="false">Commercial</button>
+        <button class="filter" data-filter="residential" aria-pressed="false">Residential</button>
+        <button class="filter" data-filter="renovation" aria-pressed="false">Renovation</button>
+      </div>
+
+      <div class="grid-3 reveal">
+
+        <a class="card" data-category="commercial" href="#">
+          <img src="https://picsum.photos/seed/ironclad-port1/800/1000" alt="Harborview Medical Center" loading="lazy">
+          <div class="card__cap">
+            <span>Commercial · 2024</span>
+            <h3>Harborview Medical</h3>
+          </div>
+        </a>
+
+        <a class="card" data-category="residential" href="#">
+          <img src="https://picsum.photos/seed/ironclad-port2/800/1000" alt="Riverside Lofts" loading="lazy">
+          <div class="card__cap">
+            <span>Residential · 2023</span>
+            <h3>Riverside Lofts</h3>
+          </div>
+        </a>
+
+        <a class="card" data-category="renovation" href="#">
+          <img src="https://picsum.photos/seed/ironclad-port3/800/1000" alt="Cedar Ridge Homes" loading="lazy">
+          <div class="card__cap">
+            <span>Renovation · 2023</span>
+            <h3>Cedar Ridge Homes</h3>
+          </div>
+        </a>
+
+        <a class="card" data-category="commercial" href="#">
+          <img src="https://picsum.photos/seed/ironclad-port4/800/1000" alt="Northgate Retail Park" loading="lazy">
+          <div class="card__cap">
+            <span>Commercial · 2022</span>
+            <h3>Northgate Retail Park</h3>
+          </div>
+        </a>
+
+        <a class="card" data-category="residential" href="#">
+          <img src="https://picsum.photos/seed/ironclad-port5/800/1000" alt="Elmwood Family Home" loading="lazy">
+          <div class="card__cap">
+            <span>Residential · 2022</span>
+            <h3>Elmwood Family Home</h3>
+          </div>
+        </a>
+
+        <a class="card" data-category="renovation" href="#">
+          <img src="https://picsum.photos/seed/ironclad-port6/800/1000" alt="The Old Mill restoration" loading="lazy">
+          <div class="card__cap">
+            <span>Renovation · 2021</span>
+            <h3>The Old Mill</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Want to see something similar built?</h2>
+          <p>Tell us what you're planning — we'll talk through options and give you a fixed quote.</p>
+        </div>
+        <a class="btn btn--primary" href="contact.html">Start a project</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Ironclad<span class="brand__dot">.</span></div>
+        <p style="margin-top:14px;max-width:34ch;font-size:.95rem;">Commercial, residential and renovation builders. Fully insured and family-run since 1994.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li><a href="tel:+441234567890">0123 456 7890</a></li>
+          <li>
+            <a class="ig" href="https://instagram.com/yourhandle" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              @yourhandle
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Ironclad Construction Ltd. All rights reserved.</span>
+      <span>Company No. 00000000 · VAT 000 0000 00</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
